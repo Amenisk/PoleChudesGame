@@ -33,9 +33,17 @@ namespace PoleChudesGame.Classes
             var collection = database.GetCollection<Question>("Questions");
             var q = collection.Find(x => x.QuestionText != null).Sort("{NumberOfDocument: -1}").FirstOrDefault<Question>();
             var rnd = new Random();
-            var number = rnd.Next(1, q.NumberQuestion + 1);
 
-            return collection.Find(x => x.NumberQuestion == number).FirstOrDefault();
+            if(q != null)
+            {
+                var number = rnd.Next(1, q.NumberQuestion + 1);
+
+                return collection.Find(x => x.NumberQuestion == number).FirstOrDefault();
+            }
+
+            return null;
         }
+
+
     }
 }
