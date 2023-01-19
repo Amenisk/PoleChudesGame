@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleChudesGame", "PoleChudesGame\PoleChudesGame.csproj", "{F72D3E33-AAA1-4204-BC82-02665F969DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F72D3E33-AAA1-4204-BC82-02665F969DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72D3E33-AAA1-4204-BC82-02665F969DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72D3E33-AAA1-4204-BC82-02665F969DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72D3E33-AAA1-4204-BC82-02665F969DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF7EA7EF-EBDE-4377-A81C-7AA53BEB72CE}
+	EndGlobalSection
+EndGlobal
