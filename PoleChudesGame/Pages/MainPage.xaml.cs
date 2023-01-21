@@ -54,6 +54,7 @@ namespace PoleChudesGame.Pages
                     {
                         fillWord += button.Content;
                         answer![i].Content = button.Content;
+                        answer![i].Background = Brushes.White;
                         return;
                     }
                 }
@@ -170,6 +171,7 @@ namespace PoleChudesGame.Pages
                     label.VerticalContentAlignment = VerticalAlignment.Center;
                     label.BorderBrush = Brushes.Black;
                     label.Margin = new Thickness(1);
+                    label.Background = Brushes.Blue;
                     label.Height = 50;
                     label.Width = 50;
                     answer.Add(label);

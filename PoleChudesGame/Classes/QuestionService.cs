@@ -12,7 +12,7 @@ namespace PoleChudesGame.Classes
             var client = new MongoClient("mongodb://localhost");
             var database = client.GetDatabase("PoleChudesGame");
             var collection = database.GetCollection<Question>("Questions");
-            var q = collection.Find(x => x.QuestionText != null).Sort("{NumberOfDocument: -1}").FirstOrDefault<Question>();
+            var q = collection.Find(x => x.QuestionText != null).Sort("{NumberQuestion: -1}").FirstOrDefault<Question>();
 
             if (q != null)
             {
@@ -31,7 +31,7 @@ namespace PoleChudesGame.Classes
             var client = new MongoClient("mongodb://localhost");
             var database = client.GetDatabase("PoleChudesGame");
             var collection = database.GetCollection<Question>("Questions");
-            var q = collection.Find(x => x.QuestionText != null).Sort("{NumberOfDocument: -1}").FirstOrDefault<Question>();
+            var q = collection.Find(x => x.QuestionText != null).Sort("{NumberQuestion: -1}").FirstOrDefault<Question>();
             var rnd = new Random();
 
             if(q != null)
